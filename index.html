@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Foodistan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0e68c;
+    }
+
+   .header {
+      background-color: #8c6239;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+   .header a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+   .header a:hover {
+      color: #f0e68c;
+    }
+
+   .body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+   .card {
+      background-color: white;
+      width: 300px;
+      height: 400px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 10px;
+    }
+
+   .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+   .card h2 {
+      margin: 0;
+      padding: 10px;
+    }
+
+   .card p {
+      margin: 0;
+      padding: 10px;
+    }
+
+   .footer {
+      background-color: #8c6239;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+   .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+   .form-card {
+      background-color: white;
+      width: 300px;
+      height: 400px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 10px;
+    }
+
+   .form-header {
+      background-color: #8c6239;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+   .form-input {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+   .form-button {
+      background-color: #8c6239;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+   .form-button:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#"><img src="https://cdn.dribbble.com/users/4913590/screenshots/15283932/media/b430f8df20aa4f1cc96e412c68db44d2.jpg" width="100" alt="Foodistan logo"></a>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+  </div>
+  <div class="body">
+    <div class="card">
+      <img src="https://littlesunnykitchen.com/wp-content/uploads/Chicke-tikka-masala-2-7.jpg" alt="Butter Chicken">
+      <h2>Butter Chicken</h2>
+      <p>Price: $12.99</p>
+      <button>View Ingredients</button>
+      <button>Order Now</button>
+    </div>
+    <div class="card">
+      <img src="https://minimalistbaker.com/wp-content/uploads/2018/10/Vegan-Palak-Paneer-SQUARE.jpg" alt="Palak Paneer">
+      <h2>Palak Paneer</h2>
+      <p>Price: $10.99</p>
+      <button>View Ingredients</button>
+      <button>Order Now</button>
+    </div>
+    <div class="card">
+      <img src="https://assets.limetray.com/assets/user_images/menus/compressed/1636789829_Tandoorichickennew.jpg" alt="Biryani">
+      <h2>Biryani</h2>
+      <p>Price: $14.99</p>
+      <button>View Ingredients</button>
+      <button>Order Now</button>
+    </div>
+    <div class="card">
+      <img src="https://thumbs.dreamstime.com/b/chole-bhature-dark-background-served-laccha-onions-pickle-buttermilk-restaurant-style-304060489.jpg" alt="Chole Bhature">
+      <h2>Chole Bhature</h2>
+      <p>Price: $9.99</p>
+      <button>View Ingredients</button>
+      <button>Order Now</button>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright © Foodistan</p>
+  </div>
+  <div class="form-container">
+    <div class="form-card">
+      <div class="form-header">
+        <h2>Contact Us</h2>
+      </div>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-input" placeholder="Name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-input" placeholder="Email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" class="form-input" placeholder="Message" required></textarea>
+        <button class="form-button">Send</button>
+      </form>
+    </div>
+    <div class="form-card">
+      <div class="form-header">
+        <h2>Sign Up</h2>
+      </div>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-input" placeholder="Name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-input" placeholder="Email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="form-input" placeholder="Password" required>
+        <button class="form-button">Sign Up</button>
+      </form>
+    </div>
+    <div class="form-card">
+      <div class="form-header">
+        <h2>Log In</h2>
+      </div>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="form-input" placeholder="Email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="form-input" placeholder="Password" required>
+        <button class="form-button">Log In</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
